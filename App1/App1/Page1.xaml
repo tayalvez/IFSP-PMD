@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Page1"
+             Title="Login"
+             BackgroundColor="#F8F8FF">
+   
+        <StackLayout>
+            <StackLayout Margin="20">
+                <Label Text="Aplicação Teste" FontSize="Title" HorizontalOptions="Center" />
+            </StackLayout>
+            <StackLayout Padding="25">
+               
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="250"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.Resources>
+                        <Style TargetType="Label">
+                            <Setter Property="VerticalOptions" Value="Center" />
+                        </Style>
+                    </Grid.Resources>
+
+                    <Label Text="ID: "
+                       FontSize="Body"
+                       Grid.Row="0" Grid.Column="0"
+                       HorizontalOptions="Center"/>
+
+                <Entry  x:Name="id" Placeholder="" Grid.Row="0" Grid.Column="1"></Entry>
+
+                    <Label Text="Pass: "
+                               FontSize="Body"
+                               Grid.Row="1" Grid.Column="0" 
+                               HorizontalOptions="Center"/>
+
+                    <Entry x:Name="pass" Placeholder=""  Grid.Row="1" Grid.Column="1" IsPassword="true" ClearButtonVisibility="WhileEditing"></Entry>
+
+
+                </Grid>
+            </StackLayout>
+            <StackLayout>
+                <Grid HorizontalOptions="Center">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="40" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250" />
+                    </Grid.ColumnDefinitions>
+
+                <Button  BackgroundColor="#87CEEB" TextColor="White" Text="OK" Grid.Row="0" Grid.Column="0" Clicked="Button_Clicked2" ></Button>
+                <Button  BackgroundColor="#87CEEB" TextColor="White" Text="Limpar" Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked1"></Button>
+                <Button  BackgroundColor="#87CEEB" TextColor="White" Clicked="Button_Clicked" Text="Créditos" Grid.Row="2" Grid.Column="0"></Button>
+
+                </Grid>
+
+            </StackLayout>
+        </StackLayout>
+    
+</ContentPage>
