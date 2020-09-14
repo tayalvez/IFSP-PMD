@@ -17,27 +17,35 @@ namespace App1
             InitializeComponent();
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Page3());
-        }
-        private void Button_Clicked1(object sender, EventArgs e)
+        private void Limpar()
         {
             id.Text = "";
             pass.Text = "";
+
         }
-        private async void Button_Clicked2(object sender, EventArgs e)
+
+       
+
+        private async void Creditos(object sender, EventArgs e)
+        {
+            Limpar();
+            await Navigation.PushAsync(new Page3());
+
+        }
+        private void BtnLimpar(object sender, EventArgs e)
+        {
+            Limpar();
+            id.CursorPosition = 1;
+        }
+        private async void Entrar(object sender, EventArgs e)
         {            
-            if (id.Text != "Aluno") {
-                await DisplayAlert("Alert", "Id inválido", "OK");
-                return;
-            }
-            if (pass.Text != "123")
-            {
-                await DisplayAlert("Alert", "Senha inválida", "OK");
+            if (id.Text != "admin" || pass.Text != "@dmin") {
+                await DisplayAlert("Alert", "Usuário não autorizado", "OK");
                 return;
             }
 
+            Limpar();
+            
             await Navigation.PushAsync(new Page2());
 
         }

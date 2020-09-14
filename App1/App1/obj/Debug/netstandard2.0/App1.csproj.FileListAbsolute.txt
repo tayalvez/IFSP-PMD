@@ -14,3 +14,4 @@ C:\Users\Taynara Alves\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Xaml
 C:\Users\Taynara Alves\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
 C:\Users\Taynara Alves\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
 C:\Users\Taynara Alves\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\Users\Taynara Alves\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.csprojAssemblyReference.cache

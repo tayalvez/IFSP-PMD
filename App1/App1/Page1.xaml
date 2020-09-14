@@ -59,9 +59,9 @@
                         <ColumnDefinition Width="250" />
                     </Grid.ColumnDefinitions>
 
-                <Button  BackgroundColor="#87CEEB" TextColor="White" Text="OK" Grid.Row="0" Grid.Column="0" Clicked="Button_Clicked2" ></Button>
-                <Button  BackgroundColor="#87CEEB" TextColor="White" Text="Limpar" Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked1"></Button>
-                <Button  BackgroundColor="#87CEEB" TextColor="White" Clicked="Button_Clicked" Text="Créditos" Grid.Row="2" Grid.Column="0"></Button>
+                <Button  BackgroundColor="#87CEEB" TextColor="White" Text="OK" Grid.Row="0" Grid.Column="0" Clicked="Entrar" ></Button>
+                <Button  BackgroundColor="#87CEEB" TextColor="White" Text="Limpar" Grid.Row="1" Grid.Column="0" Clicked="BtnLimpar"></Button>
+                <Button  BackgroundColor="#87CEEB" TextColor="White" Clicked="Creditos" Text="Créditos" Grid.Row="2" Grid.Column="0"></Button>
 
                 </Grid>
 
